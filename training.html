@@ -6,6 +6,9 @@
         h1{margin-left: 0px;}
         h2{margin-left: 40px;}
         h3{margin-left: 80px;}
+        h2{
+            color: black
+        }
 
         h1{
             color:red;
@@ -13,14 +16,30 @@
             margin-left: 500px;
             text-align: center;
         }
+        /* embed */
+        *{
+            font-weight: bold;
+            /*전체선책자 : css초기화에 사용*/
+        }
+        li{
+            color:blue;
+        }
+        .class_name{
+            color: green;
+        }
+        #id_name{
+            color: pink;
+        }
         </style>
         <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="default.css">
+        <!--external-->
     </head>
     <body>
-        <!-- h1-h6 -->
+        <!-- h1-h6 깊이(depth) -->
         <h1>대한민국</h1>
         <p>아시아의 가운데 있는</p>
-        <h2>서울</h2>
+        <h2 style="color:violet">서울</h2>
         <h3>영등포구</h3>
         <h3>마포구</h3>
         <h3>중랑구</h3>
@@ -37,15 +56,15 @@
             또 다른 주제
         </p>
 
-        <a href= “http://www.naver.com” target="_blank" >구글로이동</a>
+        <a href= "http://google.co.kr/">구글로이동</a>
         <!-- _blank, _self -->
 
         <img src="주소"/>
 
         <!-- unorderd list 비 순차적 목록-->
         <ul>
-            <li>설탕100g</li>
-            <li>소금100g</li>
+            <li class="class_name">설탕100g</li>
+            <li id="id_name">소금100g</li>
             <li>물100ml</li>
         </ul>
         <!-- orderd list 순차적 목록 -->
@@ -83,5 +102,48 @@
 
         2<sup>2</sup>
         H<sub>2</sub>
+
+        <!--절대주소,상대주소-->
+        <img src="./images/sean.jpg" width="100px"/>
+        <img src="images/sean.jpg"height="100px"/>
+
+        <!--table 도표-->
+        <!--table, tr , td -->
+        <!--colspan 열확장,rowspan 행확장-->
+        <style>
+            table,tr,td {border:solid 1px black;}
+        </style>
+        <!--summary,caption-->
+        <table summary="요약내용">
+            <caption>[표1] 표 제목</caption>
+            <!--thead, tbody,tfoot-->
+            <thead>
+                <tr>
+                    <th>제목1</th>
+                    <th>제목2</th>
+                    <th>제목3</th>
+                    <th>제목4</th>
+                    <th>제목5</th>
+                </tr>
+            </thead>
+            <tr>
+                <td colspan="2">1</td>
+                <td rowspan="2">2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+        <!--div 공간분할, span 공간분할-->
+        <!--의미없이 쓰기 좋은 태그-->
+        <div>블록형</div>
+        <span>인라인형</span>
+
+
     </body>
 </html>
