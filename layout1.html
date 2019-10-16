@@ -15,6 +15,12 @@
                 padding-right: 10px;
                 border-right: solid 2px gray; /* 경계선: 실선 2픽셀 회색 */
             }  
+            ul{
+                padding: 0px;
+            }
+            header{
+                padding: 30px;
+            }
             header>ul>li:nth-child(5){
                 border: none;
             }
@@ -60,8 +66,18 @@
             }
             #navigation{
                 background-color: #eee;
+                margin: 30px;
             }
-            h2{ margin: 0px; }      
+            h2{ 
+                margin: 0px;
+                font-size: 30px;
+                color: #333;
+            
+             }      
+            #body>section{
+                padding: 50px; 
+
+            }
             #body>section:nth-child(1){ background-color: #98f; }
             #body>section:nth-child(2){ background-color: #5d9; }
             #body>section:nth-child(3){ background-color: #f76; }
@@ -72,7 +88,11 @@
                 margin-right: auto;
                 /* 가로 길이 지정 후 left: auto,right: auto 하면*/
             }
-            h3{ color: white; }
+            h3{ 
+                color: white;
+                font-weight: normal;
+                font-size: 30px;
+             }
             dd{ margin: 0px; }
             .part{
                 float:left;
@@ -84,6 +104,32 @@
                 margin-bottom: 10px;
 
             }
+            footer ul>li{
+                float: left; /* 둥둥떠다니게:  왼쪽 기준; */
+                list-style: none; /* 목록모양(동그라미):  없음 */
+                padding-left: 5px;
+                padding-right: 5px;
+
+            }
+            #footer_left{
+                float: left;
+            }
+            #i_list{
+                float: right;
+            }
+            footer{
+                background-color: #333;
+                color: #ccc;
+                padding: 30px;
+            }
+            #wrap{
+                min-width: 1200px; /* 최소넓이 1000px*/
+                max-width: 1920px; /* 최대넓이 1920px*/
+                margin-left: auto;
+                margin-right: auto;
+                /* 양쪽 여백 자동 = 가운데 정렬 */
+            }
+
         </style>
     </head>
     <body>
@@ -231,18 +277,21 @@
             </div>
             <footer>
                 <div>
-                    <ul id="n_list">
-                        <li>home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Work</li>
-                        <li>Blog</li>
-                        <li>Contact us</li>
-                        <div class="clear"></div>
-                    </ul>
+                    <div id= "footer_left">
                     <div class="clear"></div>
-                    <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
-                    <div>the loges in the design are the property of their respective owners/copyright holders.</div>
+                       <ul id="n_list">
+                           <li>home</li>
+                           <li>About</li>
+                           <li>Services</li>
+                           <li>Work</li>
+                           <li>Blog</li>
+                           <li>Contact us</li>
+                           <div class="clear"></div>
+                       </ul>
+                       <div class="clear"></div>
+                       <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                       <div>the loges in the design are the property of their respective owners/copyright holders.</div>
+                    </div>
                     <ul id="i_list">
                         <li><img src="images/layout1_footer_icon1.png" /></li>
                         <li><img src="images/layout1_footer_icon2.png" /></li>
@@ -250,7 +299,8 @@
                         <li><img src="images/layout1_footer_icon4.png" /></li>
                         <li><img src="images/layout1_footer_icon5.png" /></li>
                         <li><img src="images/layout1_footer_icon6.png" /></li>
-                    </ul>    
+                    </ul>   
+                    <div class="clear"></div> 
                 </div>
             </footer>
         </div>
