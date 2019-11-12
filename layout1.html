@@ -29,7 +29,7 @@
                 list-style: none; /* li 기본표시(동그라미) 없음(none) */
                 padding-left: 10px;
                 padding-right: 10px;
-                border-right: solid 2px gray; /* 경계선: 실선 2픽셀 회색 */
+                
             }
             footer li{
                 float: left; /* 왼쪽 기준으로 둥둥 떠다니게, 흐르듯이 배치 */
@@ -38,7 +38,7 @@
                 padding-right: 10px;
                 border-right: solid 2px gray; /* 경계선: 실선 2픽셀 회색 */
             }  
-            footer li:nth-child(1){
+            footer li:nth-child(6){
                 border: none;
             }
             header>ul{
@@ -66,7 +66,7 @@
             }
             #navigation{
                 background-color: #eee;
-                margin: 30px;
+                padding: 30px;
             }
             h2{ 
                 margin: 0px;
@@ -112,7 +112,7 @@
 
             }
             #footer_left{
-                float: left;
+                /* float: left; */
             }
             #i_list{
                 float: right;
@@ -128,6 +128,9 @@
                 margin-left: auto;
                 margin-right: auto;
                 /* 양쪽 여백 자동 = 가운데 정렬 */
+            }
+            #i_list li{
+                border: none;
             }
 
         </style>
@@ -278,14 +281,15 @@
             <footer>
                 <div>
                     <div id= "footer_left">
-                    <div class="clear"></div>
-                       <ul id="n_list">
+                    <div  id="n_list">
+                       <ul>
                            <li>home</li>
                            <li>About</li>
                            <li>Services</li>
                            <li>Work</li>
                            <li>Blog</li>
-                           <li>Contact us</li>   
+                           <li>Contact us</li>
+                           <div class="clear"></div>
                        </ul>  
                        <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
                        <div>the loges in the design are the property of their respective owners/copyright holders.</div>
